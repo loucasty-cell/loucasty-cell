@@ -1,10 +1,30 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-banner.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-banner.svg">
-    <img alt="loucasty-cell animated header" src="./assets/hero-banner.svg" width="100%" />
-  </picture>
+  <img src="./assets/doomsday-stage.svg" width="100%" alt="Marvel Doomsday animated pixel character stage" />
 </div>
+
+<!-- DOOMSDAY_STATUS:START -->
+> **Active Sector Lead:** `DR. DOOM` · Last summoned by `@loucasty-cell`
+<!-- DOOMSDAY_STATUS:END -->
+
+<!-- INTERACTIVE DRAWER: DOOMSDAY ROSTER -->
+<details>
+  <summary><b>▸ Summon / Inspect Doomsday Roster (9 Entities)</b> <i>(click to interact)</i></summary>
+  <br />
+
+  Click any **Summon** trigger to open a pre-filled issue—submitting it runs a GitHub Action that updates the live Active Sector Lead above and closes the issue automatically.
+
+  | Character | Motion on Stage | Interactive Trigger |
+  | :--- | :--- | :--- |
+  | **Dr. Doom** | Center levitation + emerald energy pulse | [Summon Doom](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+dr-doom&body=Just+click+Submit+to+put+Dr.+Doom+on+lead+command.) |
+  | **Iron Man** | Repulsor flight patrol + jet flicker | [Summon Iron Man](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+iron-man&body=Just+click+Submit+to+summon+Iron+Man.) |
+  | **Spider-Man** | Ceiling web-line pendulum swing | [Summon Spider-Man](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+spider-man&body=Just+click+Submit+to+summon+Spider-Man.) |
+  | **Thor** | Hovering Mjolnir + lightning flashes | [Summon Thor](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+thor&body=Just+click+Submit+to+summon+Thor.) |
+  | **Dr. Strange** | Levitation + spinning Eldritch ring | [Summon Dr. Strange](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+dr-strange&body=Just+click+Submit+to+summon+Dr.+Strange.) |
+  | **Captain America** | Floor patrol + Vibranium shield | [Summon Cap](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+cap&body=Just+click+Submit+to+summon+Captain+America.) |
+  | **Hulk** | Heavy leap stomp + floor shockwave | [Summon Hulk](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+hulk&body=Just+click+Submit+to+summon+Hulk.) |
+  | **Black Panther** | Agile vibranium floor dash | [Summon Panther](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+black-panther&body=Just+click+Submit+to+summon+Black+Panther.) |
+  | **Loki** | Trickster illusion phase-teleport | [Summon Loki](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+loki&body=Just+click+Submit+to+summon+Loki.) |
+</details>
 
 <br />
 
@@ -22,7 +42,9 @@ Engineering student building **domain-specific interfaces, spatial telemetry das
 | **AgriQill / AgroGuard** | Spatial GIS & IoT | Isometric digital twin, custom `.agri` DSL linter, FastAPI, LoRaWAN, Open-Meteo | `IN PROGRESS` |
 | **Petey Plant** | Applied Vision / Agents | Agentic plant diagnostics, PlantNet-300K, React, Three.js | `PROTOTYPE` |
 
-<br />
+<div align="center">
+  <img src="./assets/divider-ironman.svg" width="100%" alt="" />
+</div>
 
 <!-- INTERACTIVE DRAWER 1: ARCHITECTURE & STACK -->
 <details>
@@ -68,40 +90,6 @@ Engineering student building **domain-specific interfaces, spatial telemetry das
   <img src="./assets/divider-doom.svg" width="100%" alt="" />
 </div>
 
-### Doomsday Pixel Stage
-
-<div align="center">
-  <img src="./assets/doomsday-stage.svg" width="100%" alt="Marvel Doomsday animated pixel character stage" />
-</div>
-
-<!-- DOOMSDAY_STATUS:START -->
-> **Active Sector Lead:** `DR. DOOM` · Last summoned by `@loucasty-cell`
-<!-- DOOMSDAY_STATUS:END -->
-
-<!-- INTERACTIVE DRAWER 3: DOOMSDAY ROSTER -->
-<details>
-  <summary><b>▸ Summon / Inspect Doomsday Roster (9 Entities)</b> <i>(click to interact)</i></summary>
-  <br />
-
-  Click any **Summon** trigger to open a pre-filled issue—submitting it runs a GitHub Action that updates the live Active Sector Lead above and closes the issue automatically.
-
-  | Character | Motion on Stage | Interactive Trigger |
-  | :--- | :--- | :--- |
-  | **Dr. Doom** | Center levitation + emerald energy pulse | [Summon Doom](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+dr-doom&body=Just+click+Submit+to+put+Dr.+Doom+on+lead+command.) |
-  | **Iron Man** | Repulsor flight patrol + jet flicker | [Summon Iron Man](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+iron-man&body=Just+click+Submit+to+summon+Iron+Man.) |
-  | **Spider-Man** | Ceiling web-line pendulum swing | [Summon Spider-Man](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+spider-man&body=Just+click+Submit+to+summon+Spider-Man.) |
-  | **Thor** | Hovering Mjolnir + lightning flashes | [Summon Thor](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+thor&body=Just+click+Submit+to+summon+Thor.) |
-  | **Dr. Strange** | Levitation + spinning Eldritch ring | [Summon Dr. Strange](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+dr-strange&body=Just+click+Submit+to+summon+Dr.+Strange.) |
-  | **Captain America** | Floor patrol + Vibranium shield | [Summon Cap](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+cap&body=Just+click+Submit+to+summon+Captain+America.) |
-  | **Hulk** | Heavy leap stomp + floor shockwave | [Summon Hulk](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+hulk&body=Just+click+Submit+to+summon+Hulk.) |
-  | **Black Panther** | Agile vibranium floor dash | [Summon Panther](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+black-panther&body=Just+click+Submit+to+summon+Black+Panther.) |
-  | **Loki** | Trickster illusion phase-teleport | [Summon Loki](https://github.com/loucasty-cell/loucasty-cell/issues/new?title=summon%3A+loki&body=Just+click+Submit+to+summon+Loki.) |
-</details>
-
-<div align="center">
-  <img src="./assets/divider-ironman.svg" width="100%" alt="" />
-</div>
-
 ### Contribution Telemetry
 
 <div align="center">
@@ -114,7 +102,7 @@ Engineering student building **domain-specific interfaces, spatial telemetry das
 
 <br />
 
-<!-- INTERACTIVE DRAWER 4: VISITOR CONSOLE -->
+<!-- INTERACTIVE DRAWER 3: VISITOR CONSOLE -->
 <details>
   <summary><b>▸ Interactive Desk Console</b> <i>(leave a ping or refill espresso)</i></summary>
   <br />
