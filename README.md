@@ -40,7 +40,8 @@ Engineering student building **domain-specific interfaces, spatial telemetry das
 | :--- | :--- | :--- | :--- |
 | **[bookflow](https://github.com/loucasty-cell/bookflow)** | Agentic Reasoning | ReAct (Reasoning + Acting) prompting loop, web client | `ACTIVE` |
 | **AgriQill / AgroGuard** | Spatial GIS & IoT | Isometric digital twin, custom `.agri` DSL linter, FastAPI, LoRaWAN, Open-Meteo | `IN PROGRESS` |
-| **Petey Plant** | Applied Vision / Agents | Agentic plant diagnostics, PlantNet-300K, React, Three.js | `PROTOTYPE` |
+| **Petey Plant** | Applied Vision / Agents | Agentic plant diagnostics, PlantNet-300K, PyTorch, React, Three.js | `PROTOTYPE` |
+| **[CrisisGuardAI](https://github.com/loucasty-cell/CrisisGuardAI)** | Applied AI / Decision Support | AI crisis triage engine, disaster telemetry dispatch, NLP, TypeScript | `ACTIVE` |
 
 <div align="center">
   <img src="./assets/divider-ironman.svg" width="100%" alt="" />
@@ -53,26 +54,44 @@ Engineering student building **domain-specific interfaces, spatial telemetry das
 
   <table>
     <tr>
-      <td valign="top" width="33%">
-        <b>Interfaces &amp; Spatial</b><br /><br />
-        <code>React 19</code> · <code>Tailwind v4</code><br />
-        <code>MapLibre</code> · <code>Deck.gl</code><br />
-        <code>Three.js</code> · <code>Figma</code>
+      <td valign="top" width="25%">
+        <b>Machine Learning &amp; Vision</b><br /><br />
+        <code>PyTorch</code> · <code>Scikit-Learn</code><br />
+        <code>Vision Transformers (ViT)</code><br />
+        <code>PlantNet-300K</code> · <code>OpenCV</code><br />
+        <code>Model Fine-Tuning</code>
       </td>
-      <td valign="top" width="33%">
-        <b>Backend &amp; Agents</b><br /><br />
-        <code>Python</code> · <code>FastAPI</code><br />
-        <code>Java</code> · <code>MySQL 8</code><br />
-        <code>ReAct Workflows</code> · <code>Custom DSLs</code>
+      <td valign="top" width="25%">
+        <b>Agentic Systems &amp; NLP</b><br /><br />
+        <code>ReAct Loops</code> · <code>Tool Calling</code><br />
+        <code>Context Engineering</code><br />
+        <code>Decision Support Systems</code><br />
+        <code>Prompt Optimization</code>
       </td>
-      <td valign="top" width="33%">
-        <b>Systems &amp; Core</b><br /><br />
-        <code>Linux VMs</code> · <code>SSH</code><br />
-        <code>Digital Hardware Design</code><br />
-        <code>Computer Architecture</code> · <code>Prolog</code>
+      <td valign="top" width="25%">
+        <b>Interfaces &amp; Spatial 3D</b><br /><br />
+        <code>React 19</code> · <code>TypeScript</code><br />
+        <code>Tailwind v4</code> · <code>Figma</code><br />
+        <code>Three.js</code> · <code>WebGL Shaders</code><br />
+        <code>MapLibre</code> · <code>Deck.gl GIS</code>
+      </td>
+      <td valign="top" width="25%">
+        <b>Systems, Engines &amp; Core</b><br /><br />
+        <code>FastAPI</code> · <code>Java (Spring/OOP)</code><br />
+        <code>Luau</code> · <code>Roblox Engine (Rojo)</code><br />
+        <code>Linux VMs</code> · <code>Custom DSL Linters</code><br />
+        <code>Digital Hardware &amp; Prolog</code>
       </td>
     </tr>
   </table>
+
+  <br />
+
+  #### 🛰️ Core Engineering Niches
+  - **Applied Computer Vision & Fine-Tuning**: Training and evaluating visual diagnostic models (transfer learning on PlantNet-300K, feature extractors) with PyTorch pipelines for field edge inference.
+  - **ReAct & Autonomous Agent Systems**: Implementing verifiable Reasoning + Acting agent loops with strict tool execution, sandboxed fallbacks, and deterministic telemetry.
+  - **Spatial Telemetry & Digital Twins**: Bridging physical IoT feeds (LoRaWAN, sensor streams) with high-density GIS map projections (`Deck.gl`, `MapLibre`) and real-time isometric visualizations.
+  - **Domain-Specific Languages (DSLs) & Compilers**: Engineering custom grammar parsers, AST linting engines (e.g., `.agri` specs), and strict Luau type-system architectures.
 </details>
 
 <!-- INTERACTIVE DRAWER 2: DESIGN PRINCIPLES -->
