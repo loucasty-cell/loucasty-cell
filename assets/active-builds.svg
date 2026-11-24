@@ -1,196 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 358" width="840" height="358" role="img" aria-label="Active Builds - Cartoonish UI Cards">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 316" width="840" height="316" role="img" aria-label="Active Builds - High-End Minimalist UI Cards">
   <defs>
-    <!-- Soft glow filters -->
-    <filter id="glow-yellow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#F5C518" flood-opacity="0.18" />
-    </filter>
-    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#10B981" flood-opacity="0.18" />
-    </filter>
-    <filter id="glow-violet" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#A855F7" flood-opacity="0.18" />
-    </filter>
-    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0EA5E9" flood-opacity="0.18" />
-    </filter>
-
     <style>
-      .title-font { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-weight: 800; }
-      .desc-font { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-weight: 400; font-size: 11.5px; fill: #A6998E; }
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 16.5px; fill: #F7F4EE; }
+      .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 11px; fill: #A8A29E; line-height: 1.5; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
       
-      .pill-pulse { animation: pill-glow 2.4s ease-in-out infinite; }
-      @keyframes pill-glow {
-        0%, 100% { opacity: 0.85; }
+      .status-pulse { animation: subtle-pulse 3s ease-in-out infinite; }
+      @keyframes subtle-pulse {
+        0%, 100% { opacity: 0.6; }
         50% { opacity: 1; }
       }
       
-      /* Card hover tilt simulation or ambient float */
-      .card-float-1 { animation: float-1 4.2s ease-in-out infinite; }
-      .card-float-2 { animation: float-2 4.6s ease-in-out 0.4s infinite; }
-      .card-float-3 { animation: float-2 4.4s ease-in-out 0.8s infinite; }
-      .card-float-4 { animation: float-1 4.8s ease-in-out 1.2s infinite; }
-
-      @keyframes float-1 {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-3px); }
-      }
-      @keyframes float-2 {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-3.5px); }
-      }
-
       @media (prefers-reduced-motion: reduce) {
-        .card-float-1, .card-float-2, .card-float-3, .card-float-4, .pill-pulse { animation: none; }
+        .status-pulse { animation: none; }
       }
     </style>
   </defs>
 
   <!-- ============================================================== -->
-  <!-- CARD 1: bookflow (Yellow / Amber)                              -->
+  <!-- CARD 1: bookflow (Top Left)                                    -->
   <!-- ============================================================== -->
-  <g transform="translate(18, 14)" class="card-float-1">
-    <!-- Cartoon Drop Shadow layer -->
-    <rect x="0" y="6" width="392" height="154" rx="20" fill="#0A0807" opacity="0.65" />
-    <!-- Card Frame -->
-    <rect x="0" y="0" width="392" height="154" rx="20" fill="#171310" stroke="#F5C518" stroke-width="2.5" filter="url(#glow-yellow)" />
-    
-    <!-- Top Bar: Category Pill & Status -->
-    <rect x="18" y="16" width="138" height="22" rx="11" fill="rgba(245, 197, 24, 0.12)" stroke="rgba(245, 197, 24, 0.35)" stroke-width="1" />
-    <text x="28" y="31" fill="#F5C518" font-size="9" font-weight="700" letter-spacing="0.8" class="mono">⚡ AGENTIC REASONING</text>
+  <g transform="translate(0, 0)">
+    <!-- Base Card Surface -->
+    <rect x="0" y="0" width="410" height="148" rx="12" fill="#141210" stroke="#2B2623" stroke-width="1.2" />
+    <line x1="12" y1="1" x2="398" y2="1" stroke="#3D3631" stroke-width="1" stroke-linecap="round" />
 
-    <!-- Status badge -->
-    <rect x="312" y="16" width="62" height="22" rx="11" fill="#F5C518" class="pill-pulse" />
-    <text x="343" y="31" fill="#14110F" font-size="9" font-weight="800" text-anchor="middle" letter-spacing="0.6" class="mono">ACTIVE</text>
+    <!-- Domain Tag -->
+    <text x="18" y="26" fill="#8C827A" font-size="9" font-weight="600" letter-spacing="1" class="mono">AGENTIC REASONING // REACT</text>
 
-    <!-- Title & Emoji -->
-    <text x="20" y="68" fill="#FFF9E6" font-size="19" class="title-font">bookflow</text>
+    <!-- Status Indicator Pill -->
+    <rect x="330" y="14" width="62" height="19" rx="6" fill="#1C1917" stroke="#332D28" stroke-width="1" />
+    <circle cx="342" cy="23.5" r="3" fill="#72B07D" class="status-pulse" />
+    <text x="351" y="27" fill="#D6D0C7" font-size="8.5" font-weight="600" letter-spacing="0.5" class="mono">ACTIVE</text>
+
+    <!-- Project Title -->
+    <text x="18" y="58" class="title">bookflow</text>
 
     <!-- Description -->
-    <text x="20" y="88" class="desc-font">ReAct reasoning loop with tool-use verification,</text>
-    <text x="20" y="103" class="desc-font">autonomous query routing, and minimal web client.</text>
+    <text x="18" y="78" class="desc">Autonomous ReAct prompting loop with verified tool execution,</text>
+    <text x="18" y="94" class="desc">structured reasoning chains, and minimal reader interface.</text>
 
-    <!-- Tech Badges (Rounded Pills) -->
-    <g transform="translate(20, 118)">
-      <rect x="0" y="0" width="80" height="20" rx="6" fill="#241E18" stroke="#3D3227" stroke-width="1" />
-      <text x="40" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">TypeScript</text>
+    <!-- Tech Stack Tags -->
+    <g transform="translate(18, 112)">
+      <rect x="0" y="0" width="76" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="38" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">TypeScript</text>
 
-      <rect x="88" y="0" width="88" height="20" rx="6" fill="#241E18" stroke="#3D3227" stroke-width="1" />
-      <text x="132" y="14" fill="#F5C518" font-size="9" font-weight="600" text-anchor="middle" class="mono">ReAct Loop</text>
+      <rect x="84" y="0" width="84" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="126" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">ReAct Loop</text>
 
-      <rect x="184" y="0" width="94" height="20" rx="6" fill="#241E18" stroke="#3D3227" stroke-width="1" />
-      <text x="231" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">Web Client</text>
+      <rect x="176" y="0" width="90" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="221" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">Tool Sandbox</text>
     </g>
   </g>
 
   <!-- ============================================================== -->
-  <!-- CARD 2: AgriQill / AgroGuard (Emerald Mint)                    -->
+  <!-- CARD 2: AgriQill / AgroGuard (Top Right)                       -->
   <!-- ============================================================== -->
-  <g transform="translate(430, 14)" class="card-float-2">
-    <!-- Cartoon Drop Shadow layer -->
-    <rect x="0" y="6" width="392" height="154" rx="20" fill="#0A0807" opacity="0.65" />
-    <!-- Card Frame -->
-    <rect x="0" y="0" width="392" height="154" rx="20" fill="#111713" stroke="#10B981" stroke-width="2.5" filter="url(#glow-emerald)" />
-    
-    <!-- Top Bar: Category Pill & Status -->
-    <rect x="18" y="16" width="128" height="22" rx="11" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" />
-    <text x="28" y="31" fill="#34D399" font-size="9" font-weight="700" letter-spacing="0.8" class="mono">🌱 SPATIAL GIS &amp; IOT</text>
+  <g transform="translate(430, 0)">
+    <!-- Base Card Surface -->
+    <rect x="0" y="0" width="410" height="148" rx="12" fill="#141210" stroke="#2B2623" stroke-width="1.2" />
+    <line x1="12" y1="1" x2="398" y2="1" stroke="#3D3631" stroke-width="1" stroke-linecap="round" />
 
-    <!-- Status badge -->
-    <rect x="284" y="16" width="90" height="22" rx="11" fill="#10B981" class="pill-pulse" />
-    <text x="329" y="31" fill="#0D1F17" font-size="8.5" font-weight="800" text-anchor="middle" letter-spacing="0.6" class="mono">IN PROGRESS</text>
+    <!-- Domain Tag -->
+    <text x="18" y="26" fill="#8C827A" font-size="9" font-weight="600" letter-spacing="1" class="mono">SPATIAL GIS // DIGITAL TWIN</text>
 
-    <!-- Title & Emoji -->
-    <text x="20" y="68" fill="#E6FFF2" font-size="19" class="title-font">AgriQill / AgroGuard</text>
+    <!-- Status Indicator Pill -->
+    <rect x="306" y="14" width="86" height="19" rx="6" fill="#1C1917" stroke="#332D28" stroke-width="1" />
+    <circle cx="318" cy="23.5" r="3" fill="#C4A24E" class="status-pulse" />
+    <text x="327" y="27" fill="#D6D0C7" font-size="8.5" font-weight="600" letter-spacing="0.5" class="mono">IN PROGRESS</text>
+
+    <!-- Project Title -->
+    <text x="18" y="58" class="title">AgriQill / AgroGuard</text>
 
     <!-- Description -->
-    <text x="20" y="88" class="desc-font">Isometric digital twin, custom .agri DSL linter,</text>
-    <text x="20" y="103" class="desc-font">LoRaWAN telemetry &amp; live micro-climate mapping.</text>
+    <text x="18" y="78" class="desc">Isometric GIS digital twin, custom .agri DSL AST parser,</text>
+    <text x="18" y="94" class="desc">LoRaWAN sensor telemetry, and Open-Meteo climate modeling.</text>
 
-    <!-- Tech Badges (Rounded Pills) -->
-    <g transform="translate(20, 118)">
-      <rect x="0" y="0" width="62" height="20" rx="6" fill="#16261D" stroke="#243D2F" stroke-width="1" />
-      <text x="31" y="14" fill="#34D399" font-size="9" font-weight="600" text-anchor="middle" class="mono">FastAPI</text>
+    <!-- Tech Stack Tags -->
+    <g transform="translate(18, 112)">
+      <rect x="0" y="0" width="58" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="29" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">FastAPI</text>
 
-      <rect x="70" y="0" width="76" height="20" rx="6" fill="#16261D" stroke="#243D2F" stroke-width="1" />
-      <text x="108" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">Deck.gl GIS</text>
+      <rect x="66" y="0" width="76" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="104" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">Deck.gl GIS</text>
 
-      <rect x="154" y="0" width="76" height="20" rx="6" fill="#16261D" stroke="#243D2F" stroke-width="1" />
-      <text x="192" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">LoRaWAN</text>
+      <rect x="150" y="0" width="76" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="188" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">Custom DSL</text>
     </g>
   </g>
 
   <!-- ============================================================== -->
-  <!-- CARD 3: Petey Plant (Violet / Lilac)                          -->
+  <!-- CARD 3: Petey Plant (Bottom Left)                              -->
   <!-- ============================================================== -->
-  <g transform="translate(18, 186)" class="card-float-3">
-    <!-- Cartoon Drop Shadow layer -->
-    <rect x="0" y="6" width="392" height="154" rx="20" fill="#0A0807" opacity="0.65" />
-    <!-- Card Frame -->
-    <rect x="0" y="0" width="392" height="154" rx="20" fill="#15111A" stroke="#A855F7" stroke-width="2.5" filter="url(#glow-violet)" />
-    
-    <!-- Top Bar: Category Pill & Status -->
-    <rect x="18" y="16" width="148" height="22" rx="11" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1" />
-    <text x="28" y="31" fill="#C084FC" font-size="9" font-weight="700" letter-spacing="0.8" class="mono">🪴 VISION &amp; DIAGNOSTICS</text>
+  <g transform="translate(0, 166)">
+    <!-- Base Card Surface -->
+    <rect x="0" y="0" width="410" height="148" rx="12" fill="#141210" stroke="#2B2623" stroke-width="1.2" />
+    <line x1="12" y1="1" x2="398" y2="1" stroke="#3D3631" stroke-width="1" stroke-linecap="round" />
 
-    <!-- Status badge -->
-    <rect x="296" y="16" width="78" height="22" rx="11" fill="#A855F7" class="pill-pulse" />
-    <text x="335" y="31" fill="#1E0B2B" font-size="8.5" font-weight="800" text-anchor="middle" letter-spacing="0.6" class="mono">PROTOTYPE</text>
+    <!-- Domain Tag -->
+    <text x="18" y="26" fill="#8C827A" font-size="9" font-weight="600" letter-spacing="1" class="mono">COMPUTER VISION // DIAGNOSTICS</text>
 
-    <!-- Title & Emoji -->
-    <text x="20" y="68" fill="#F7F0FF" font-size="19" class="title-font">Petey Plant</text>
+    <!-- Status Indicator Pill -->
+    <rect x="316" y="14" width="76" height="19" rx="6" fill="#1C1917" stroke="#332D28" stroke-width="1" />
+    <circle cx="328" cy="23.5" r="3" fill="#A89F91" class="status-pulse" />
+    <text x="337" y="27" fill="#D6D0C7" font-size="8.5" font-weight="600" letter-spacing="0.5" class="mono">PROTOTYPE</text>
+
+    <!-- Project Title -->
+    <text x="18" y="58" class="title">Petey Plant</text>
 
     <!-- Description -->
-    <text x="20" y="88" class="desc-font">Agentic plant pathology scanner fine-tuned on</text>
-    <text x="20" y="103" class="desc-font">PlantNet-300K with 3D interactive growth visualizer.</text>
+    <text x="18" y="78" class="desc">Agentic plant pathology classifier fine-tuned on PlantNet-300K</text>
+    <text x="18" y="94" class="desc">paired with interactive Three.js 3D growth telemetry.</text>
 
-    <!-- Tech Badges (Rounded Pills) -->
-    <g transform="translate(20, 118)">
-      <rect x="0" y="0" width="64" height="20" rx="6" fill="#241B2E" stroke="#3D2952" stroke-width="1" />
-      <text x="32" y="14" fill="#C084FC" font-size="9" font-weight="600" text-anchor="middle" class="mono">PyTorch</text>
+    <!-- Tech Stack Tags -->
+    <g transform="translate(18, 112)">
+      <rect x="0" y="0" width="60" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="30" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">PyTorch</text>
 
-      <rect x="72" y="0" width="72" height="20" rx="6" fill="#241B2E" stroke="#3D2952" stroke-width="1" />
-      <text x="108" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">Three.js</text>
+      <rect x="68" y="0" width="94" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="115" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">PlantNet-300K</text>
 
-      <rect x="152" y="0" width="72" height="20" rx="6" fill="#241B2E" stroke="#3D2952" stroke-width="1" />
-      <text x="188" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">React 19</text>
+      <rect x="170" y="0" width="66" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="203" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">Three.js</text>
     </g>
   </g>
 
   <!-- ============================================================== -->
-  <!-- CARD 4: CrisisGuardAI (Cyan / Neon Blue)                      -->
+  <!-- CARD 4: CrisisGuardAI (Bottom Right)                           -->
   <!-- ============================================================== -->
-  <g transform="translate(430, 186)" class="card-float-4">
-    <!-- Cartoon Drop Shadow layer -->
-    <rect x="0" y="6" width="392" height="154" rx="20" fill="#0A0807" opacity="0.65" />
-    <!-- Card Frame -->
-    <rect x="0" y="0" width="392" height="154" rx="20" fill="#0F161C" stroke="#0EA5E9" stroke-width="2.5" filter="url(#glow-cyan)" />
-    
-    <!-- Top Bar: Category Pill & Status -->
-    <rect x="18" y="16" width="138" height="22" rx="11" fill="rgba(14, 165, 233, 0.12)" stroke="rgba(14, 165, 233, 0.35)" stroke-width="1" />
-    <text x="28" y="31" fill="#38BDF8" font-size="9" font-weight="700" letter-spacing="0.8" class="mono">🛡️ CRISIS AI &amp; TRIAGE</text>
+  <g transform="translate(430, 166)">
+    <!-- Base Card Surface -->
+    <rect x="0" y="0" width="410" height="148" rx="12" fill="#141210" stroke="#2B2623" stroke-width="1.2" />
+    <line x1="12" y1="1" x2="398" y2="1" stroke="#3D3631" stroke-width="1" stroke-linecap="round" />
 
-    <!-- Status badge -->
-    <rect x="312" y="16" width="62" height="22" rx="11" fill="#0EA5E9" class="pill-pulse" />
-    <text x="343" y="31" fill="#061A24" font-size="9" font-weight="800" text-anchor="middle" letter-spacing="0.6" class="mono">ACTIVE</text>
+    <!-- Domain Tag -->
+    <text x="18" y="26" fill="#8C827A" font-size="9" font-weight="600" letter-spacing="1" class="mono">DECISION SUPPORT // NLP TRIAGE</text>
 
-    <!-- Title & Emoji -->
-    <text x="20" y="68" fill="#F0F9FF" font-size="19" class="title-font">CrisisGuardAI</text>
+    <!-- Status Indicator Pill -->
+    <rect x="330" y="14" width="62" height="19" rx="6" fill="#1C1917" stroke="#332D28" stroke-width="1" />
+    <circle cx="342" cy="23.5" r="3" fill="#72B07D" class="status-pulse" />
+    <text x="351" y="27" fill="#D6D0C7" font-size="8.5" font-weight="600" letter-spacing="0.5" class="mono">ACTIVE</text>
+
+    <!-- Project Title -->
+    <text x="18" y="58" class="title">CrisisGuardAI</text>
 
     <!-- Description -->
-    <text x="20" y="88" class="desc-font">AI-driven emergency decision support, disaster triage</text>
-    <text x="20" y="103" class="desc-font">telemetry orchestration &amp; real-time NLP dispatch.</text>
+    <text x="18" y="78" class="desc">AI-driven emergency decision support, disaster triage telemetry</text>
+    <text x="18" y="94" class="desc">orchestration, and real-time NLP incident dispatch.</text>
 
-    <!-- Tech Badges (Rounded Pills) -->
-    <g transform="translate(20, 118)">
-      <rect x="0" y="0" width="80" height="20" rx="6" fill="#142533" stroke="#1D3E54" stroke-width="1" />
-      <text x="40" y="14" fill="#38BDF8" font-size="9" font-weight="600" text-anchor="middle" class="mono">NLP Triage</text>
+    <!-- Tech Stack Tags -->
+    <g transform="translate(18, 112)">
+      <rect x="0" y="0" width="76" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="38" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">NLP Triage</text>
 
-      <rect x="88" y="0" width="80" height="20" rx="6" fill="#142533" stroke="#1D3E54" stroke-width="1" />
-      <text x="128" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">TypeScript</text>
+      <rect x="84" y="0" width="76" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="122" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">TypeScript</text>
 
-      <rect x="176" y="0" width="84" height="20" rx="6" fill="#142533" stroke="#1D3E54" stroke-width="1" />
-      <text x="218" y="14" fill="#E8DFD5" font-size="9" font-weight="600" text-anchor="middle" class="mono">Dispatch AI</text>
+      <rect x="168" y="0" width="60" height="20" rx="5" fill="#1B1815" stroke="#2B2521" stroke-width="1" />
+      <text x="198" y="14" fill="#DDD6CC" font-size="9" font-weight="500" text-anchor="middle" class="mono">FastAPI</text>
     </g>
   </g>
 </svg>
