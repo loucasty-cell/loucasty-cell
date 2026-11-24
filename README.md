@@ -16,12 +16,16 @@ Engineering student building **domain-specific interfaces, spatial telemetry das
 
 ### Active Builds
 
-| Project | Domain | Architecture & Stack | Status |
-| :--- | :--- | :--- | :--- |
-| **[bookflow](https://github.com/loucasty-cell/bookflow)** | Agentic Reasoning | ReAct (Reasoning + Acting) prompting loop, web client | `ACTIVE` |
-| **AgriQill / AgroGuard** | Spatial GIS & IoT | Isometric digital twin, custom `.agri` DSL linter, FastAPI, LoRaWAN, Open-Meteo | `IN PROGRESS` |
-| **Petey Plant** | Applied Vision / Agents | Agentic plant diagnostics, PlantNet-300K, PyTorch, React, Three.js | `PROTOTYPE` |
-| **[CrisisGuardAI](https://github.com/loucasty-cell/CrisisGuardAI)** | Applied AI / Decision Support | AI crisis triage engine, disaster telemetry dispatch, NLP, TypeScript | `ACTIVE` |
+<div align="center">
+  <img src="./assets/active-builds.svg" width="100%" alt="Active Builds" />
+</div>
+
+<div align="center">
+  <a href="https://github.com/loucasty-cell/bookflow"><code>📦 bookflow</code></a> ·
+  <a href="https://github.com/loucasty-cell"><code>🌱 AgriQill</code></a> ·
+  <a href="https://github.com/loucasty-cell"><code>🪴 Petey Plant</code></a> ·
+  <a href="https://github.com/loucasty-cell/CrisisGuardAI"><code>🛡️ CrisisGuardAI</code></a>
+</div>
 
 <div align="center">
   <img src="./assets/divider-ironman.svg" width="100%" alt="" />
