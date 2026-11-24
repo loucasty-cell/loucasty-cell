@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 36" width="840" height="36" role="img" aria-label="Spider-Man swinging pixel divider">
+  <defs>
+    <clipPath id="spidey-bounds">
+      <rect x="0" y="0" width="840" height="36" />
+    </clipPath>
+    <linearGradient id="silk-sheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EDE4DA" stop-opacity="0" />
+      <stop offset="70%" stop-color="#C88A55" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#EDE4DA" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      .pixel { shape-rendering: crispEdges; }
+      .spidey-travel { animation: zip-across 9.5s linear infinite; }
+      .spidey-swing { animation: web-pendulum 1.9s ease-in-out infinite; }
+      .silk-wake { animation: wake-across 9.5s linear infinite; }
+
+      @keyframes zip-across {
+        0% { transform: translateX(-48px); }
+        74% { transform: translateX(888px); }
+        100% { transform: translateX(888px); }
+      }
+      @keyframes web-pendulum {
+        0%, 100% { transform: rotate(24deg); }
+        50% { transform: rotate(-22deg); }
+      }
+      @keyframes wake-across {
+        0% { transform: translateX(-160px); opacity: 0; }
+        8% { opacity: 1; }
+        74% { transform: translateX(776px); opacity: 0; }
+        100% { transform: translateX(776px); opacity: 0; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .spidey-travel { animation: none; transform: translateX(420px); }
+        .spidey-swing { animation: none; transform: rotate(10deg); }
+        .silk-wake { animation: none; opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <line x1="8" y1="18" x2="832" y2="18" stroke="#2F2824" stroke-width="1.5" />
+  <rect x="0" y="14" width="2" height="8" rx="1" fill="#3A332E" />
+  <rect x="838" y="14" width="2" height="8" rx="1" fill="#3A332E" />
+
+  <g clip-path="url(#spidey-bounds)">
+    <rect class="silk-wake" x="0" y="17" width="110" height="2" rx="1" fill="url(#silk-sheen)" />
+
+    <g class="spidey-travel">
+      <g class="spidey-swing pixel">
+        <rect x="0" y="0" width="2" height="12" fill="#D8CFC4" opacity="0.8" />
+        <rect x="-2" y="10" width="4" height="2" fill="#A83E3B" />
+        <rect x="-2" y="12" width="8" height="6" fill="#A83E3B" />
+        <rect x="2" y="14" width="4" height="2" fill="#EDE4DA" />
+        <rect x="-4" y="18" width="8" height="6" fill="#3A506B" />
+        <rect x="0" y="18" width="4" height="6" fill="#A83E3B" />
+        <rect x="-8" y="16" width="4" height="2" fill="#A83E3B" />
+        <rect x="2" y="24" width="6" height="2" fill="#3A506B" />
+        <rect x="6" y="26" width="4" height="2" fill="#A83E3B" />
+        <rect x="-8" y="24" width="6" height="2" fill="#3A506B" />
+        <rect x="-12" y="26" width="4" height="2" fill="#A83E3B" />
+      </g>
+    </g>
+  </g>
+</svg>

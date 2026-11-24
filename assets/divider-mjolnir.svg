@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 36" width="840" height="36" role="img" aria-label="Thor's Mjolnir striking pixel divider">
+  <defs>
+    <clipPath id="mjolnir-bounds">
+      <rect x="0" y="0" width="840" height="36" />
+    </clipPath>
+    <linearGradient id="bolt-trail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C88A55" stop-opacity="0" />
+      <stop offset="68%" stop-color="#E5C77B" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#EDE4DA" stop-opacity="1" />
+    </linearGradient>
+    <style>
+      .pixel { shape-rendering: crispEdges; }
+      .mjolnir-travel { animation: strike-across 6.8s cubic-bezier(0.25, 0.08, 0.55, 1) infinite; }
+      .mjolnir-wake { animation: wake-strike 6.8s cubic-bezier(0.25, 0.08, 0.55, 1) infinite; }
+      .mjolnir-surge { animation: electric-vibe 0.24s steps(2, end) infinite; }
+      .zap-a { animation: crackle-a 0.34s steps(2, end) infinite; }
+      .zap-b { animation: crackle-b 0.34s steps(2, end) infinite; }
+
+      @keyframes strike-across {
+        0% { transform: translateX(-64px); }
+        62% { transform: translateX(904px); }
+        100% { transform: translateX(904px); }
+      }
+      @keyframes wake-strike {
+        0% { transform: translateX(-214px); opacity: 0; }
+        5% { opacity: 1; }
+        62% { transform: translateX(754px); opacity: 0; }
+        100% { transform: translateX(754px); opacity: 0; }
+      }
+      @keyframes electric-vibe {
+        0%, 100% { transform: translateY(-0.5px); }
+        50% { transform: translateY(0.5px); }
+      }
+      @keyframes crackle-a {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.1; }
+      }
+      @keyframes crackle-b {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 1; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .mjolnir-travel { animation: none; transform: translateX(420px); }
+        .mjolnir-surge { animation: none; transform: none; }
+        .zap-a { animation: none; opacity: 0.9; }
+        .zap-b, .mjolnir-wake { animation: none; opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <line x1="8" y1="18" x2="832" y2="18" stroke="#2F2824" stroke-width="1.5" />
+  <rect x="0" y="14" width="2" height="8" rx="1" fill="#3A332E" />
+  <rect x="838" y="14" width="2" height="8" rx="1" fill="#3A332E" />
+
+  <g clip-path="url(#mjolnir-bounds)">
+    <rect class="mjolnir-wake" x="0" y="17" width="150" height="2" rx="1" fill="url(#bolt-trail)" />
+
+    <g transform="translate(0, 18)">
+      <g class="mjolnir-travel">
+        <g class="mjolnir-surge pixel">
+          <g class="zap-a">
+            <rect x="-26" y="-8" width="6" height="2" fill="#E5C77B" />
+            <rect x="-20" y="-6" width="6" height="2" fill="#EDE4DA" />
+            <rect x="-14" y="-8" width="6" height="2" fill="#E5C77B" />
+            <rect x="-8" y="-10" width="4" height="2" fill="#D8ECEE" />
+            <rect x="10" y="-3" width="4" height="2" fill="#EDE4DA" />
+            <rect x="14" y="-1" width="6" height="2" fill="#E5C77B" />
+            <rect x="12" y="3" width="4" height="2" fill="#D8ECEE" />
+          </g>
+
+          <g class="zap-b">
+            <rect x="-28" y="6" width="6" height="2" fill="#E5C77B" />
+            <rect x="-22" y="4" width="8" height="2" fill="#EDE4DA" />
+            <rect x="-14" y="8" width="6" height="2" fill="#D8ECEE" />
+            <rect x="-8" y="6" width="4" height="2" fill="#E5C77B" />
+            <rect x="2" y="-11" width="4" height="2" fill="#EDE4DA" />
+            <rect x="6" y="-9" width="4" height="2" fill="#E5C77B" />
+            <rect x="10" y="1" width="6" height="2" fill="#D8ECEE" />
+          </g>
+
+          <rect x="-24" y="-2" width="2" height="4" fill="#63493A" />
+          <rect x="-22" y="-1" width="4" height="2" fill="#8C6239" />
+          <rect x="-18" y="-2" width="2" height="4" fill="#B5BBC2" />
+          <rect x="-16" y="-1" width="10" height="2" fill="#8C6239" />
+
+          <rect x="-4" y="-7" width="12" height="2" fill="#C2C6CC" />
+          <rect x="-6" y="-5" width="16" height="10" fill="#9EA3A8" />
+          <rect x="-4" y="5" width="12" height="2" fill="#6E747A" />
+          <rect x="8" y="-5" width="2" height="10" fill="#B5BBC2" />
+          <rect x="0" y="-5" width="2" height="10" fill="#767C82" />
+          <rect x="4" y="-2" width="2" height="4" fill="#EDE4DA" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

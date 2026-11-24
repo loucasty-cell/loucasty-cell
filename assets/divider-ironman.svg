@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 36" width="840" height="36" role="img" aria-label="Iron Man flying pixel divider">
+  <defs>
+    <clipPath id="iron-bounds">
+      <rect x="0" y="0" width="840" height="36" />
+    </clipPath>
+    <linearGradient id="repulsor-trail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C88A55" stop-opacity="0" />
+      <stop offset="78%" stop-color="#C88A55" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#D8ECEE" stop-opacity="0.95" />
+    </linearGradient>
+    <style>
+      .pixel { shape-rendering: crispEdges; }
+      .iron-travel { animation: fly-across 7.8s cubic-bezier(0.32, 0.04, 0.68, 0.96) infinite; }
+      .iron-bob { animation: flight-bob 1.4s ease-in-out infinite; }
+      .jet-flicker { animation: thruster 0.28s steps(2, end) infinite; }
+      .trail-sweep { animation: wake-fly 7.8s cubic-bezier(0.32, 0.04, 0.68, 0.96) infinite; }
+
+      @keyframes fly-across {
+        0% { transform: translateX(-64px); }
+        68% { transform: translateX(904px); }
+        100% { transform: translateX(904px); }
+      }
+      @keyframes flight-bob {
+        0%, 100% { transform: translateY(-2.5px); }
+        50% { transform: translateY(2.5px); }
+      }
+      @keyframes thruster {
+        0%, 100% { opacity: 1; transform: scaleX(1); }
+        50% { opacity: 0.45; transform: scaleX(0.65); }
+      }
+      @keyframes wake-fly {
+        0% { transform: translateX(-200px); opacity: 0; }
+        6% { opacity: 1; }
+        68% { transform: translateX(764px); opacity: 0; }
+        100% { transform: translateX(764px); opacity: 0; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .iron-travel { animation: none; transform: translateX(420px); }
+        .iron-bob { animation: none; transform: translateY(0px); }
+        .jet-flicker { animation: none; }
+        .trail-sweep { animation: none; opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <line x1="8" y1="18" x2="832" y2="18" stroke="#2F2824" stroke-width="1.5" />
+  <rect x="0" y="14" width="2" height="8" rx="1" fill="#3A332E" />
+  <rect x="838" y="14" width="2" height="8" rx="1" fill="#3A332E" />
+
+  <g clip-path="url(#iron-bounds)">
+    <rect class="trail-sweep" x="0" y="17" width="128" height="2" rx="1" fill="url(#repulsor-trail)" />
+
+    <g transform="translate(0, 18)">
+      <g class="iron-travel">
+        <g class="iron-bob pixel">
+          <g class="jet-flicker">
+            <rect x="-26" y="-2" width="6" height="4" fill="#C88A55" opacity="0.5" />
+            <rect x="-20" y="-2" width="6" height="4" fill="#C88A55" />
+            <rect x="-16" y="-1" width="4" height="2" fill="#EDE4DA" />
+            <rect x="-10" y="3" width="4" height="2" fill="#D8ECEE" />
+          </g>
+          <rect x="-14" y="-3" width="6" height="6" fill="#9E3B33" />
+          <rect x="-8" y="-3" width="6" height="6" fill="#C89B54" />
+          <rect x="-14" y="0" width="12" height="1" fill="#14110F" />
+          <rect x="-2" y="-4" width="10" height="8" fill="#9E3B33" />
+          <rect x="4" y="-5" width="4" height="2" fill="#C89B54" />
+          <rect x="4" y="3" width="4" height="2" fill="#C89B54" />
+          <rect x="2" y="-1" width="2" height="2" fill="#D8ECEE" />
+          <rect x="-4" y="3" width="8" height="2" fill="#9E3B33" />
+          <rect x="-6" y="3" width="3" height="2" fill="#C89B54" />
+          <rect x="8" y="-4" width="8" height="8" fill="#9E3B33" />
+          <rect x="12" y="-3" width="4" height="6" fill="#C89B54" />
+          <rect x="14" y="-2" width="2" height="2" fill="#D8ECEE" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

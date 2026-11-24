@@ -1,0 +1,337 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 210" width="840" height="210" role="img" aria-label="Marvel Doomsday animated pixel character stage">
+  <defs>
+    <pattern id="cacao-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#2A231F" />
+    </pattern>
+    <radialGradient id="doom-aura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4B7A57" stop-opacity="0.34" />
+      <stop offset="100%" stop-color="#14110F" stop-opacity="0" />
+    </radialGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .pixel { shape-rendering: crispEdges; }
+
+      /* Character Motion Loops */
+      .spidey-swing { animation: pendulum 2.9s ease-in-out infinite; }
+      .iron-hover { animation: iron-flight 3.8s ease-in-out infinite; }
+      .iron-flame { animation: flicker 0.35s steps(2, end) infinite; }
+      .strange-float { animation: levitate 3.4s ease-in-out infinite; }
+      .strange-ring { animation: spin-rune 5s linear infinite; }
+      .doom-float { animation: levitate-slow 4.2s ease-in-out infinite; }
+      .doom-magic { animation: pulse-magic 1.8s ease-in-out infinite; }
+      .thor-hover { animation: levitate 3.1s ease-in-out 0.6s infinite; }
+      .thor-zap { animation: lightning 3.6s steps(1, end) infinite; }
+      .loki-phase { animation: trickster 4.4s ease-in-out infinite; }
+      .cap-patrol { animation: patrol-cap 5.4s ease-in-out infinite; }
+      .panther-prowl { animation: prowl 3.2s cubic-bezier(0.45, 0, 0.55, 1) infinite; }
+      .hulk-stomp { animation: stomp 3.0s ease-in-out infinite; }
+      .hulk-dust { animation: dust-burst 3.0s ease-out infinite; }
+
+      @keyframes pendulum {
+        0%, 100% { transform: rotate(-24deg); }
+        50% { transform: rotate(24deg); }
+      }
+      @keyframes iron-flight {
+        0%, 100% { transform: translate(-16px, 4px); }
+        50% { transform: translate(16px, -8px); }
+      }
+      @keyframes flicker {
+        0%, 100% { opacity: 1; transform: scaleY(1); }
+        50% { opacity: 0.45; transform: scaleY(0.65); }
+      }
+      @keyframes levitate {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes levitate-slow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes spin-rune {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulse-magic {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 1; }
+      }
+      @keyframes lightning {
+        0%, 72%, 100% { opacity: 0; }
+        74%, 78% { opacity: 1; }
+        80% { opacity: 0.25; }
+        83%, 86% { opacity: 0.95; }
+      }
+      @keyframes trickster {
+        0%, 38%, 100% { opacity: 1; transform: translate(0px, 0px); }
+        46% { opacity: 0.15; transform: translate(-14px, -4px); }
+        54% { opacity: 0.95; transform: translate(16px, -6px); }
+        82% { opacity: 0.95; transform: translate(16px, 0px); }
+        90% { opacity: 0.15; transform: translate(4px, -2px); }
+      }
+      @keyframes patrol-cap {
+        0%, 100% { transform: translate(-42px, 0px); }
+        25% { transform: translate(0px, -2px); }
+        50% { transform: translate(48px, 0px); }
+        75% { transform: translate(0px, -2px); }
+      }
+      @keyframes prowl {
+        0%, 100% { transform: translate(-40px, 0px); }
+        45% { transform: translate(38px, -4px); }
+        55% { transform: translate(42px, 0px); }
+      }
+      @keyframes stomp {
+        0%, 60%, 100% { transform: translateY(0px); }
+        70% { transform: translateY(2px); }
+        82% { transform: translateY(-16px); }
+        92% { transform: translateY(0px); }
+      }
+      @keyframes dust-burst {
+        0%, 89%, 100% { opacity: 0; transform: scaleX(0.6); }
+        93% { opacity: 0.9; transform: scaleX(1.15); }
+        98% { opacity: 0; transform: scaleX(1.45); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .spidey-swing, .iron-hover, .iron-flame, .strange-float, .strange-ring,
+        .doom-float, .doom-magic, .thor-hover, .thor-zap, .loki-phase,
+        .cap-patrol, .panther-prowl, .hulk-stomp, .hulk-dust {
+          animation: none;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Stage Frame -->
+  <rect x="2" y="2" width="836" height="206" rx="16" fill="#14110F" stroke="#3A332E" stroke-width="2" />
+  <rect x="10" y="10" width="820" height="190" rx="12" fill="url(#cacao-dots)" />
+
+  <!-- Top Sector Terminal Bar -->
+  <text x="28" y="28" fill="#7E7268" font-size="10.5" font-weight="600" letter-spacing="1" class="mono">DOOMSDAY // SECTOR 616 PIXEL STAGE</text>
+  <circle cx="718" cy="24.5" r="3" fill="#72B07D" class="doom-magic" />
+  <text x="812" y="28" text-anchor="end" fill="#A6998E" font-size="10.5" font-weight="600" letter-spacing="0.6" class="mono">9 ENTITIES LIVE</text>
+  <line x1="24" y1="36" x2="816" y2="36" stroke="#26201C" stroke-width="1" />
+
+  <!-- Scenery Architecture -->
+  <g class="pixel" fill="#1B1613">
+    <rect x="34" y="138" width="46" height="40" />
+    <rect x="92" y="152" width="34" height="26" />
+    <rect x="366" y="128" width="108" height="50" />
+    <rect x="384" y="114" width="72" height="14" />
+    <rect x="742" y="142" width="58" height="36" />
+  </g>
+  <line x1="24" y1="178" x2="816" y2="178" stroke="#3A332E" stroke-width="2" />
+  <line x1="24" y1="182" x2="816" y2="182" stroke="#1F1A17" stroke-width="3" />
+
+  <!-- Dr. Doom Ambient Aura -->
+  <circle cx="420" cy="84" r="64" fill="url(#doom-aura)" class="doom-magic" />
+
+  <!-- 1. SPIDER-MAN -->
+  <g transform="translate(108, 36)">
+    <g class="spidey-swing pixel">
+      <rect x="-1" y="0" width="2" height="54" fill="#D8CFC4" opacity="0.75" />
+      <rect x="-3" y="50" width="6" height="4" fill="#A83E3B" />
+      <rect x="-6" y="54" width="12" height="9" fill="#A83E3B" />
+      <rect x="-5" y="57" width="4" height="3" fill="#EDE4DA" />
+      <rect x="1" y="57" width="4" height="3" fill="#EDE4DA" />
+      <rect x="-6" y="63" width="12" height="9" fill="#3A506B" />
+      <rect x="-3" y="63" width="6" height="9" fill="#A83E3B" />
+      <rect x="-1" y="66" width="2" height="2" fill="#14110F" />
+      <rect x="-9" y="72" width="6" height="6" fill="#3A506B" />
+      <rect x="-12" y="75" width="6" height="6" fill="#A83E3B" />
+      <rect x="3" y="72" width="6" height="6" fill="#3A506B" />
+      <rect x="6" y="75" width="6" height="6" fill="#A83E3B" />
+    </g>
+  </g>
+
+  <!-- 2. IRON MAN -->
+  <g transform="translate(220, 62)">
+    <g class="iron-hover pixel">
+      <rect x="-6" y="0" width="12" height="9" fill="#9E3B33" />
+      <rect x="-4" y="2" width="8" height="6" fill="#C89B54" />
+      <rect x="-3" y="4" width="2" height="2" fill="#D8ECEE" />
+      <rect x="1" y="4" width="2" height="2" fill="#D8ECEE" />
+      <rect x="-9" y="9" width="18" height="12" fill="#9E3B33" />
+      <rect x="-12" y="9" width="3" height="8" fill="#C89B54" />
+      <rect x="9" y="9" width="3" height="8" fill="#C89B54" />
+      <rect x="-2" y="12" width="4" height="4" fill="#D8ECEE" />
+      <rect x="-6" y="21" width="5" height="4" fill="#C89B54" />
+      <rect x="1" y="21" width="5" height="4" fill="#C89B54" />
+      <rect x="-6" y="25" width="5" height="5" fill="#9E3B33" />
+      <rect x="1" y="25" width="5" height="5" fill="#9E3B33" />
+      <g class="iron-flame">
+        <rect x="-5" y="30" width="3" height="5" fill="#C88A55" />
+        <rect x="2" y="30" width="3" height="5" fill="#C88A55" />
+        <rect x="-4" y="35" width="2" height="3" fill="#EDE4DA" />
+        <rect x="2" y="35" width="2" height="3" fill="#EDE4DA" />
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. DR. STRANGE -->
+  <g transform="translate(310, 86)">
+    <g class="strange-float pixel">
+      <rect x="-11" y="3" width="22" height="24" fill="#7A2A26" />
+      <rect x="-12" y="2" width="5" height="8" fill="#913530" />
+      <rect x="7" y="2" width="5" height="8" fill="#913530" />
+      <rect x="-6" y="0" width="12" height="3" fill="#26211E" />
+      <rect x="-4" y="3" width="8" height="6" fill="#D4A789" />
+      <rect x="-6" y="3" width="2" height="3" fill="#B8ABA0" />
+      <rect x="4" y="3" width="2" height="3" fill="#B8ABA0" />
+      <rect x="-6" y="9" width="12" height="17" fill="#34495E" />
+      <rect x="-2" y="11" width="4" height="3" fill="#C89B54" />
+      <rect x="-1" y="12" width="2" height="1" fill="#72B07D" />
+      <rect x="-5" y="26" width="4" height="5" fill="#1F1A17" />
+      <rect x="1" y="26" width="4" height="5" fill="#1F1A17" />
+      <g transform="translate(22, 14)">
+        <g class="strange-ring">
+          <rect x="-7" y="-7" width="14" height="14" fill="none" stroke="#C88A55" stroke-width="2" />
+          <rect x="-5" y="-5" width="10" height="10" fill="none" stroke="#EDE4DA" stroke-width="1" transform="rotate(45)" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. DR. DOOM -->
+  <g transform="translate(420, 62)">
+    <g class="doom-float pixel">
+      <rect x="-15" y="12" width="30" height="22" fill="#32523B" />
+      <rect x="-9" y="0" width="18" height="3" fill="#4B7A57" />
+      <rect x="-12" y="3" width="3" height="9" fill="#4B7A57" />
+      <rect x="9" y="3" width="3" height="9" fill="#4B7A57" />
+      <rect x="-6" y="3" width="12" height="9" fill="#9EA3A8" />
+      <rect x="-4" y="6" width="3" height="2" fill="#14110F" />
+      <rect x="1" y="6" width="3" height="2" fill="#14110F" />
+      <rect x="-3" y="6" width="1" height="1" fill="#72B07D" />
+      <rect x="2" y="6" width="1" height="1" fill="#72B07D" />
+      <rect x="-9" y="12" width="18" height="15" fill="#4B7A57" />
+      <rect x="-6" y="12" width="12" height="9" fill="#858B91" />
+      <rect x="-9" y="12" width="3" height="3" fill="#C89B54" />
+      <rect x="6" y="12" width="3" height="3" fill="#C89B54" />
+      <rect x="-9" y="21" width="18" height="2" fill="#63493A" />
+      <rect x="-18" y="14" width="6" height="4" fill="#9EA3A8" />
+      <rect x="12" y="14" width="6" height="4" fill="#9EA3A8" />
+      <g class="doom-magic">
+        <rect x="-22" y="6" width="6" height="6" fill="#72B07D" />
+        <rect x="-20" y="8" width="2" height="2" fill="#EDE4DA" />
+        <rect x="16" y="6" width="6" height="6" fill="#72B07D" />
+        <rect x="18" y="8" width="2" height="2" fill="#EDE4DA" />
+      </g>
+      <rect x="-8" y="27" width="6" height="6" fill="#767C82" />
+      <rect x="2" y="27" width="6" height="6" fill="#767C82" />
+    </g>
+  </g>
+
+  <!-- 5. THOR -->
+  <g transform="translate(568, 60)">
+    <g class="thor-hover pixel">
+      <g class="thor-zap">
+        <rect x="12" y="-22" width="3" height="8" fill="#E5C77B" />
+        <rect x="9" y="-14" width="3" height="6" fill="#EDE4DA" />
+        <rect x="12" y="-8" width="3" height="6" fill="#E5C77B" />
+      </g>
+      <rect x="-12" y="10" width="24" height="19" fill="#8E3631" />
+      <rect x="-6" y="0" width="12" height="5" fill="#B5BBC2" />
+      <rect x="-10" y="-2" width="4" height="5" fill="#EDE4DA" />
+      <rect x="6" y="-2" width="4" height="5" fill="#EDE4DA" />
+      <rect x="-5" y="5" width="10" height="5" fill="#D4A789" />
+      <rect x="-4" y="8" width="8" height="2" fill="#C89B54" />
+      <rect x="-7" y="10" width="14" height="13" fill="#363A40" />
+      <rect x="-5" y="12" width="3" height="3" fill="#C2C6CC" />
+      <rect x="2" y="12" width="3" height="3" fill="#C2C6CC" />
+      <rect x="-5" y="17" width="3" height="3" fill="#C2C6CC" />
+      <rect x="2" y="17" width="3" height="3" fill="#C2C6CC" />
+      <rect x="7" y="6" width="4" height="8" fill="#D4A789" />
+      <rect x="11" y="4" width="2" height="6" fill="#8C6239" />
+      <rect x="8" y="-2" width="9" height="6" fill="#C2C6CC" />
+      <rect x="-6" y="23" width="5" height="7" fill="#4A4039" />
+      <rect x="1" y="23" width="5" height="7" fill="#4A4039" />
+    </g>
+  </g>
+
+  <!-- 6. LOKI -->
+  <g transform="translate(724, 72)">
+    <g class="loki-phase pixel">
+      <rect x="-9" y="-9" width="3" height="9" fill="#C4A24E" />
+      <rect x="-6" y="-9" width="3" height="3" fill="#C4A24E" />
+      <rect x="6" y="-9" width="3" height="9" fill="#C4A24E" />
+      <rect x="3" y="-9" width="3" height="3" fill="#C4A24E" />
+      <rect x="-6" y="0" width="12" height="3" fill="#C4A24E" />
+      <rect x="-5" y="3" width="10" height="6" fill="#D9B69E" />
+      <rect x="-7" y="3" width="2" height="6" fill="#1D1A18" />
+      <rect x="5" y="3" width="2" height="6" fill="#1D1A18" />
+      <rect x="-11" y="9" width="22" height="20" fill="#2F5941" />
+      <rect x="-6" y="9" width="12" height="15" fill="#1F2A24" />
+      <rect x="-4" y="11" width="8" height="2" fill="#C4A24E" />
+      <rect x="-2" y="13" width="4" height="6" fill="#C4A24E" />
+      <rect x="-14" y="3" width="2" height="24" fill="#C4A24E" />
+      <rect x="-15" y="0" width="4" height="4" fill="#72B07D" />
+      <rect x="-5" y="24" width="4" height="6" fill="#1D1A18" />
+      <rect x="1" y="24" width="4" height="6" fill="#1D1A18" />
+    </g>
+  </g>
+
+  <!-- 7. CAPTAIN AMERICA -->
+  <g transform="translate(150, 178)">
+    <g class="cap-patrol pixel">
+      <rect x="-6" y="-32" width="12" height="6" fill="#3B5878" />
+      <rect x="-1" y="-31" width="2" height="2" fill="#EDE4DA" />
+      <rect x="-4" y="-26" width="8" height="3" fill="#D4A789" />
+      <rect x="-7" y="-23" width="14" height="12" fill="#3B5878" />
+      <rect x="-1" y="-21" width="3" height="3" fill="#EDE4DA" />
+      <rect x="-6" y="-15" width="12" height="3" fill="#EDE4DA" />
+      <rect x="-4" y="-15" width="3" height="3" fill="#A33D36" />
+      <rect x="1" y="-15" width="3" height="3" fill="#A33D36" />
+      <rect x="-6" y="-11" width="5" height="6" fill="#3B5878" />
+      <rect x="1" y="-11" width="5" height="6" fill="#3B5878" />
+      <rect x="-6" y="-5" width="5" height="5" fill="#8E3631" />
+      <rect x="1" y="-5" width="5" height="5" fill="#8E3631" />
+      <rect x="5" y="-23" width="12" height="12" fill="#A33D36" />
+      <rect x="7" y="-21" width="8" height="8" fill="#EDE4DA" />
+      <rect x="9" y="-19" width="4" height="4" fill="#3B5878" />
+      <rect x="10" y="-18" width="2" height="2" fill="#EDE4DA" />
+    </g>
+  </g>
+
+  <!-- 8. BLACK PANTHER -->
+  <g transform="translate(505, 178)">
+    <g class="panther-prowl pixel">
+      <rect x="-6" y="-29" width="3" height="3" fill="#232024" />
+      <rect x="3" y="-29" width="3" height="3" fill="#232024" />
+      <rect x="-6" y="-26" width="12" height="8" fill="#232024" />
+      <rect x="-4" y="-23" width="3" height="2" fill="#D8D2E0" />
+      <rect x="1" y="-23" width="3" height="2" fill="#D8D2E0" />
+      <rect x="-7" y="-18" width="14" height="11" fill="#232024" />
+      <rect x="-5" y="-17" width="10" height="2" fill="#8C6BB8" />
+      <rect x="-3" y="-13" width="6" height="2" fill="#7E5EA8" />
+      <rect x="-11" y="-15" width="4" height="5" fill="#232024" />
+      <rect x="-12" y="-10" width="3" height="2" fill="#C2C6CC" />
+      <rect x="7" y="-15" width="4" height="5" fill="#232024" />
+      <rect x="9" y="-10" width="3" height="2" fill="#C2C6CC" />
+      <rect x="-8" y="-7" width="5" height="7" fill="#1C191D" />
+      <rect x="3" y="-7" width="5" height="7" fill="#1C191D" />
+    </g>
+  </g>
+
+  <!-- 9. HULK -->
+  <g transform="translate(676, 178)">
+    <g class="hulk-dust pixel">
+      <rect x="-24" y="-3" width="6" height="3" fill="#7E7268" />
+      <rect x="18" y="-3" width="6" height="3" fill="#7E7268" />
+      <rect x="-18" y="-6" width="3" height="3" fill="#4A4039" />
+      <rect x="15" y="-6" width="3" height="3" fill="#4A4039" />
+    </g>
+    <g class="hulk-stomp pixel">
+      <rect x="-8" y="-37" width="16" height="4" fill="#1D1A18" />
+      <rect x="-8" y="-33" width="16" height="7" fill="#5B7A4A" />
+      <rect x="-6" y="-30" width="4" height="2" fill="#14110F" />
+      <rect x="2" y="-30" width="4" height="2" fill="#14110F" />
+      <rect x="-14" y="-26" width="28" height="14" fill="#5B7A4A" />
+      <rect x="-10" y="-22" width="20" height="3" fill="#48633A" />
+      <rect x="-19" y="-21" width="6" height="11" fill="#5B7A4A" />
+      <rect x="13" y="-21" width="6" height="11" fill="#5B7A4A" />
+      <rect x="-12" y="-12" width="24" height="6" fill="#4B3B54" />
+      <rect x="-11" y="-6" width="8" height="6" fill="#5B7A4A" />
+      <rect x="3" y="-6" width="8" height="6" fill="#5B7A4A" />
+    </g>
+  </g>
+</svg>

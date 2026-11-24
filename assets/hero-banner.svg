@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 140" width="840" height="140" role="img" aria-label="loucasty-cell animated header">
+  <defs>
+    <pattern id="cacao-dots-hero" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#2A231F" />
+    </pattern>
+    <linearGradient id="hero-scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4B7A57" stop-opacity="0" />
+      <stop offset="50%" stop-color="#72B07D" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#4B7A57" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .pixel { shape-rendering: crispEdges; }
+      
+      .pulse-green { animation: p-green 2s ease-in-out infinite; }
+      .cursor-blink { animation: c-blink 1s steps(2, end) infinite; }
+      .scan-line { animation: scan-anim 6s ease-in-out infinite; }
+
+      @keyframes p-green {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 1; }
+      }
+      @keyframes c-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes scan-anim {
+        0% { transform: translateY(0px); opacity: 0; }
+        20% { opacity: 0.8; }
+        80% { opacity: 0.8; }
+        100% { transform: translateY(110px); opacity: 0; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .pulse-green, .cursor-blink, .scan-line { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="836" height="136" rx="16" fill="#14110F" stroke="#3A332E" stroke-width="2" />
+  <rect x="10" y="10" width="820" height="120" rx="12" fill="url(#cacao-dots-hero)" />
+
+  <!-- Scanline sweep -->
+  <g clip-path="url(#hero-clip)">
+    <clipPath id="hero-clip">
+      <rect x="10" y="10" width="820" height="120" rx="12" />
+    </clipPath>
+    <rect class="scan-line" x="10" y="10" width="820" height="2" fill="url(#hero-scan)" />
+  </g>
+
+  <!-- Top Status Bar -->
+  <text x="28" y="30" fill="#7E7268" font-size="10.5" font-weight="600" letter-spacing="1.2" class="mono">TACTICAL CONSOLE // SECTOR 616</text>
+  <circle cx="704" cy="26.5" r="3" fill="#72B07D" class="pulse-green" />
+  <text x="812" y="30" text-anchor="end" fill="#A6998E" font-size="10" font-weight="600" letter-spacing="0.8" class="mono">SYS.ID: LOUCASTY-CELL</text>
+  <line x1="24" y1="38" x2="816" y2="38" stroke="#26201C" stroke-width="1" />
+
+  <!-- Main Identity Banner -->
+  <g transform="translate(32, 74)">
+    <!-- Pixel bracket accent -->
+    <rect x="0" y="-18" width="4" height="42" fill="#4B7A57" class="pixel" />
+    <rect x="0" y="-18" width="14" height="4" fill="#4B7A57" class="pixel" />
+    <rect x="0" y="20" width="14" height="4" fill="#4B7A57" class="pixel" />
+
+    <text x="24" y="2" fill="#EDE4DA" font-size="24" font-weight="800" letter-spacing="2" class="mono">LIN HTET AUNG</text>
+    <text x="24" y="22" fill="#A6998E" font-size="11.5" font-weight="500" letter-spacing="1.1" class="mono">SPATIAL TELEMETRY · DOMAIN INTERFACES · REACT AGENTS</text>
+  </g>
+
+  <!-- Right Telemetry Panel -->
+  <g transform="translate(640, 68)" class="pixel">
+    <rect x="0" y="0" width="168" height="34" rx="4" fill="#1B1613" stroke="#2A231F" stroke-width="1" />
+    <text x="12" y="15" fill="#7E7268" font-size="9" font-weight="600" letter-spacing="0.5" class="mono">LOC // YANGON [UIT]</text>
+    <text x="12" y="27" fill="#72B07D" font-size="9" font-weight="700" letter-spacing="0.5" class="mono">&gt; REPO_STATE: ACTIVE<tspan class="cursor-blink" fill="#EDE4DA">_</tspan></text>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <line x1="24" y1="120" x2="816" y2="120" stroke="#26201C" stroke-width="1" />
+</svg>
